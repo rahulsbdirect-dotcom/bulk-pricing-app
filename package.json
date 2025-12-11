@@ -7,18 +7,21 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "db:migrate": "node scripts/migrate.js"
+    "db:migrate": "node scripts/migrate.js",
+    "test:pricing": "node scripts/test-pricing.js"
   },
   "dependencies": {
     "next": "^14.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "@stripe/stripe-js": "^2.2.0",
     "stripe": "^14.0.0",
     "pg": "^8.11.0",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.2",
     "axios": "^1.6.0",
-    "swr": "^2.2.0"
+    "swr": "^2.2.0",
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
